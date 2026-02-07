@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Folder Sorter</title>
     <style>
-        /* Сброс и базовые стили */
+        /* Reset and basic styles */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         html, body {
-            height: 100%; /* На всю высоту */
-            overflow: hidden; /* Убираем скроллбар если не нужен */
+            height: 100%; /* Full height */
+            overflow: hidden; /* Hide scrollbar if not needed */
         }
 
         body { 
@@ -22,7 +22,7 @@
             padding: 15px;
         }
 
-        /* Верхняя часть */
+        /* Header section */
         h1 { 
             margin-bottom: 20px; 
             font-size: 14px; 
@@ -31,7 +31,7 @@
             color: #ececec;
         }
         
-        /* Кнопка */
+        /* Button styles */
         .btn-main { 
             background: #2d8ceb; 
             color: #fff; 
@@ -53,12 +53,12 @@
             font-size: 10px;
             color: #777;
             text-align: center;
-            min-height: 14px; /* Чтобы текст не прыгал */
+            min-height: 14px; /* Prevent text jumping */
         }
 
-        /* Футер (прижат к низу) */
+        /* Footer (pushed to bottom) */
         .footer {
-            margin-top: auto; /* Магия Flexbox: толкает элемент вниз */
+            margin-top: auto; /* Flexbox magic: pushes element to the bottom */
             font-size: 10px;
             padding-top: 20px;
             opacity: 0.6;
