@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Folder Sorter</title>
+    <style>
+        /* Сброс и базовые стили */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html, body {
+            height: 100%; /* На всю высоту */
+            overflow: hidden; /* Убираем скроллбар если не нужен */
+        }
+
+        body { 
+            background-color: #232323; 
+            color: #b5b5b5; 
+            font-family: "Adobe Clean", sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+
+        /* Верхняя часть */
+        h1 { 
+            margin-bottom: 20px; 
+            font-size: 14px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            color: #ececec;
+        }
+        
+        /* Кнопка */
+        .btn-main { 
+            background: #2d8ceb; 
+            color: #fff; 
+            border: none; 
+            border-radius: 4px;
+            padding: 12px 20px; 
+            width: 100%; 
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer; 
+            transition: background 0.2s, transform 0.1s;
+            text-transform: uppercase;
+        }
+        .btn-main:hover { background: #1a7adf; }
+        .btn-main:active { background: #0056b3; transform: scale(0.98); }
+        
+        #status {
+            margin-top: 15px;
+            font-size: 10px;
+            color: #777;
+            text-align: center;
+            min-height: 14px; /* Чтобы текст не прыгал */
+        }
+
+        /* Футер (прижат к низу) */
+        .footer {
+            margin-top: auto; /* Магия Flexbox: толкает элемент вниз */
+            font-size: 10px;
+            padding-top: 20px;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        .footer:hover { opacity: 1; }
+
+        .author-link {
+            color: #808080;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 1px dotted transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .author-link:hover {
+            color: #2d8ceb;
+            border-bottom-color: #2d8ceb;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>📂 Sorter</h1>
+    
+    <button id="sortBtn" class="btn-main">Sort Files</button>
+    <div id="status">Ready</div>
+
+    <div class="footer">
+        <span id="authorLink" class="author-link">created by fare</span>
+    </div>
+
+    <script src="js/CSInterface.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
