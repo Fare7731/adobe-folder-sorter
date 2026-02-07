@@ -20,4 +20,5 @@ This plugin sorts all files in Adobe After Effects and Premiere Pro projects int
 # Installing:
 - Download the source code from the [releases page](https://github.com/Fare7731/adobe-folder-sorter/releases)
 - Move the "com.foldersorter.panel" folder to the "C:\Program Files (x86)\Common Files\Adobe\CEP\extensions" directory
+- Enable csxs test mode via reg file
 - Open the plugin window in the program by following the path "Window - Extensions - Folder Sorter"
